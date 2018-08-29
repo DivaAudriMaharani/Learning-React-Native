@@ -1,0 +1,3 @@
+rootProject.name = 'hihi10'
+
+include ':app'
