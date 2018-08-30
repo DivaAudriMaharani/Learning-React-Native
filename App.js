@@ -1,42 +1,16 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
-import React, { Component } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View,
-  Image
-} from 'react-native';
-
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Kelas : XI RPL 4\n' +
-    'No Absen : 10',
-});
+import React, {Component} from 'react';
+import {Platform, StyleSheet, Text, View, AppRegistry,Image} from 'react-native';
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Hello!
-        </Text>
-        <Text style={styles.instructions}>
-          Nama : Diva Audri Maharani
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-          <Image style={{width : 400, height : 400}}
-          source={require('./divau.jpg')}
-          />
+        <Text style={styles.judul}>Hello !</Text>
+        <Text style={styles.tulis}>Nama : Diva Audri Maharani</Text>
+		    <Text style={styles.tulis}>No : 10</Text>
+		    <Text style={styles.tulis}>Kelas : XI RPL 4</Text>
+        <Image source={require('./divau.jpg')} style={{width: 340, height: 433}}/>
       </View>
     );
   }
@@ -49,12 +23,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
+    judul: {
+  fontSize: 20,
     textAlign: 'center',
-    margin: 10,
+    color: '#333333',
+    marginBottom: 5,
   },
-  instructions: {
+  tulis: {
+	fontSize: 20,
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
