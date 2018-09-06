@@ -3,11 +3,13 @@ import {Platform, StyleSheet, Text, View, AppRegistry, Image} from 'react-native
 import Judul from './Components/Judul';
 
 type Props = {};
-export default class App extends Component<Props> {
+export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-		<Judul/>
+		    <Judul title="BIODATA"/>
+        <Judul title="LOGIN"/>
+        <Judul title="FORM"/>
         <Text style={styles.judul}>Hello !</Text>
         <Text style={styles.tulis}>Nama : Diva Audri Maharani</Text>
 		    <Text style={styles.tulis}>No : 10</Text>
