@@ -13,6 +13,6 @@ const liat= {
 	judul: {
 		color: '#f00',
 		fontSize: 36,
-		backgroundColor : 'yellow'
+		backgroundColor : 'blue'
 	}
 }
